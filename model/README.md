@@ -14,6 +14,14 @@ Ele fornece uma **API compatível com o padrão OpenAI** (`/v1/chat/completions`
 
 ## 🐳 Comando para executar
 
+
+```bash
+cd model
+
+bash vllm-cpu.sh
+````
+
+
 ```bash
 docker run -it \
   --rm \

@@ -1,4 +1,8 @@
-chromadb
+fastapi
+uvicorn
+requests
 PyPDF2
 langchain
-fastapi
+chromadb
+python-multipart
+langchain-text-splitters

@@ -4,7 +4,7 @@ import os
 
 st.title("Document QA - Chat com RAG (vLLM + ChromaDB)")
 
-backend_url = os.getenv("API_URL", "http://localhost:9000")  
+backend_url = os.getenv("BACKEND_URL", "http://localhost:9000")  
 
 uploaded_file = st.file_uploader("📄 Envie um documento (PDF ou TXT):", type=["pdf", "txt"])
 if uploaded_file:

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import StreamingResponse, JSONResponse
 from PyPDF2 import PdfReader
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitters import  CharacterTextSplitter
 import chromadb
 import requests
 import json
