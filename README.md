@@ -19,13 +19,18 @@ Ao final desta atividade, você deverá ser capaz de:
 mlops-docker-compose/
 │
 ├── server/             # 🧠 Backend com endpoint que acessa modelo de linguagem via RAG
-│   ├── app.py          # Código principal do servidor (pode conter trechos a serem completados)
+│   ├── app.py          
 │   ├── requirements.txt
 │   └── ...             
 │
 ├── web/                # 💻 Frontend que consome o backend
-│   ├── src/
-│   ├── package.json
+│   ├── app.py          
+│   ├── requirements.txt
+│   └── ... 
+|
+| 
+├── model/                # 🧠 Script para rodar modelo
+│   ├── qwen.sh          
 │   └── ...             
 │
 ├── docker-compose.yml  # 🧩 Arquivo de orquestração (a ser criado pelo aluno)
