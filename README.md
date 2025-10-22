@@ -87,25 +87,6 @@ O código também pode conter trechos faltantes com instruções como:
    * O serviço `web` deve depender de `server` (usando `depends_on`)
    * Mapeie as portas locais (ex: `8000:8000` e `3000:3000`)
 
-Exemplo de estrutura esperada (não completa!):
-
-```yaml
-version: "3.9"
-services:
-  server:
-    build: ./server
-    ports:
-      - "8000:8000"
-  web:
-    build: ./web
-    ports:
-      - "3000:3000"
-    depends_on:
-      - server
-```
-
----
-
 ## ▶️ Como executar
 
 Após criar os arquivos necessários:
@@ -114,22 +95,6 @@ Após criar os arquivos necessários:
 # Construir e iniciar os containers
 docker compose up --build
 ```
-
-Acesse:
-
-* Frontend: [http://localhost:3000](http://localhost:3000)
-* Backend API: [http://localhost:8000](http://localhost:8000)
-
----
-
-## 🧩 Desafio bônus (opcional)
-
-* Adicione um **volume** para o backend que armazene logs.
-* Configure variáveis de ambiente no `docker-compose.yml` para controlar o host e porta do backend.
-* Utilize uma **rede customizada** para isolar os containers.
-* Adicione um serviço extra (ex: `redis` ou `postgres`) e conecte ao backend.
-
----
 
 ## 📘 Recursos de apoio
 
